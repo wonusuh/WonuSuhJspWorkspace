@@ -14,18 +14,17 @@ for (int i = 0; i < idList.size(); i += 1) {
 	}
 }
 if (idx == -1) {
-	response.sendRedirect("02_main.jsp");
+	response.sendRedirect("03_21_loginForm.jsp");
 } else {
+	session.setAttribute("log", idx);
 	if (pwList.get(idx).equals(inputPw)) {
-		session.setAttribute("log", idx);
-		if (inputId.equals("admin")) {
+		if (idx == 0) {
 	response.sendRedirect("01_11_adminMain.jsp");
-		} else {
+		}else{
 	response.sendRedirect("02_main.jsp");
 		}
 	} else {
-		session.setAttribute("log", -1);
-		response.sendRedirect("02_main.jsp");
+		response.sendRedirect("03_21_loginForm.jsp");
 	}
 }
 %>

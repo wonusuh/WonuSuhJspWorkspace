@@ -5,6 +5,8 @@
 if (session.getAttribute("log") == null) {
 	response.sendRedirect("index.jsp");
 }
+ArrayList<String> nameList = (ArrayList<String>) session.getAttribute("nameList");
+int log = (Integer) session.getAttribute("log");
 %>
 <!DOCTYPE html>
 <html>
@@ -21,11 +23,18 @@ if (session.getAttribute("log") == null) {
 	<a href="./03_21_loginForm.jsp">로그인</a>
 	<%
 	} else {
-		int log = (Integer)session.getAttribute("log");
-		String name="id not found.";
-	ArrayList<String> nameList =(ArrayList<String>) session.getAttribute("namelist");
-	name=nameList.get(log);
-	%><h2><%=name%> 님 환영합니다.</h2>
+	String name = "id not found.";
+	name = nameList.get(log);
+	%><h2><%=name%>
+		님 환영합니다.
+	</h2>
+	<table border="1">
+		<tr>
+			<td><a href="./03_23_logoutPro.jsp">로그아웃</a></td>
+			<td><a href="./03_31_updateForm.jsp?target=<%=log%>">회원정보수정</a></td>
+			<td><a href="./03_41_deleteForm.jsp">회원탈퇴</a></td>
+		</tr>
+	</table>
 	<%
 	}
 	%>

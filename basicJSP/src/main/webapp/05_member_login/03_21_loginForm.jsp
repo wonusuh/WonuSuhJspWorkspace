@@ -9,8 +9,8 @@
 <body>
 	<h1>로그인 페이지</h1>
 	<form action="03_22_loginPro.jsp" method="post">
-		아이디 : <input type="text" name="inputId" /> 비밀번호 : <input
-			type="password" name="inputPw" /> <br>
+		아이디 : <input type="text" name="inputId" required="required"/> 비밀번호 : <input
+			type="password" name="inputPw" / required="required"> <br>
 		<button onclick="./03_22_loginPro.jsp">로그인</button>
 	</form>
 </body>
