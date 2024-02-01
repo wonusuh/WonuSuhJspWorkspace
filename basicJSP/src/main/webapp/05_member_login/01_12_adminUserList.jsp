@@ -2,10 +2,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
-ArrayList<String> idList =(ArrayList<String>) session.getAttribute("idList");
-ArrayList<String> pwList =(ArrayList<String>) session.getAttribute("pwList");
-ArrayList<String> nameList =(ArrayList<String>) session.getAttribute("nameList");
-ArrayList<String> genderList =(ArrayList<String>) session.getAttribute("genderList");
+ArrayList<String> idList = (ArrayList<String>) session.getAttribute("idList");
+ArrayList<String> pwList = (ArrayList<String>) session.getAttribute("pwList");
+ArrayList<String> nameList = (ArrayList<String>) session.getAttribute("nameList");
+ArrayList<String> genderList = (ArrayList<String>) session.getAttribute("genderList");
 %>
 <!DOCTYPE html>
 <html>

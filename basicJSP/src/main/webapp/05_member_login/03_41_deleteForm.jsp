@@ -13,14 +13,14 @@ String dbPw = pwList.get(log);
 <title>회원 탈퇴</title>
 </head>
 <body>
-<form action="./03_42_deletePro.jsp">
-	<table border="1">
-		<tr>
-			<td>패스워드</td>
-			<td><input type="password" name="inputPw"/></td>
-		</tr>
-	</table>
-	<button>탈퇴하기</button>
-</form>
+	<form action="./03_42_deletePro.jsp">
+		<table border="1">
+			<tr>
+				<td>패스워드</td>
+				<td><input type="password" name="inputPw" /></td>
+			</tr>
+		</table>
+		<button>탈퇴하기</button>
+	</form>
 </body>
 </html>

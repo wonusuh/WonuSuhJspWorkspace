@@ -11,6 +11,7 @@ int idx = -1;
 for (int i = 0; i < idList.size(); i += 1) {
 	if (inputId.equals(idList.get(i))) {
 		idx = i;
+		break;
 	}
 }
 if (idx == -1) {
@@ -20,7 +21,7 @@ if (idx == -1) {
 	if (pwList.get(idx).equals(inputPw)) {
 		if (idx == 0) {
 	response.sendRedirect("01_11_adminMain.jsp");
-		}else{
+		} else {
 	response.sendRedirect("02_main.jsp");
 		}
 	} else {
