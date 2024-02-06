@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="MRU_RUNTIME_STORE">
+		<item value="Apache Tomcat v9.0"/>
+		<item value="apache-tomcat-10.0.27"/>
 		<item value="NULL_RUNTIME"/>
+	</list>
+	<list key="J2EE_IMPORT_null">
+		<item value="C:\Users\82103\Desktop\MemberMVC2.war"/>
+		<item value="C:\Users\82103\Desktop\mvc2_Baisc2.war"/>
 	</list>
 </section>

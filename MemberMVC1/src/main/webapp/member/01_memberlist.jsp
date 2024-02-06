@@ -1,5 +1,5 @@
-<%@page import="kr.basic.member.Member"%>
-<%@page import="kr.basic.member.MemberDAO"%>
+<%@page import="kr.basic.model.Member"%>
+<%@page import="kr.basic.model.MemberDAO"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>

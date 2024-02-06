@@ -9,7 +9,7 @@
 <body>
 	<h2><%=request.getContextPath()%></h2>
 	<h2>로그인</h2>
-	<form method="post" action="<%=request.getContextPath()%>/login.do">
+	<form method="post" action="<%=request.getContextPath()%>/loginPro2.do">
 		아이디 : <input type="text" name="id"> <br> 패스워드 : <input
 			type="text" name="pw"> <br> <input type="submit"
 			value="로그인">
