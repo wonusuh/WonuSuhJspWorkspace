@@ -13,6 +13,19 @@
 	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 	crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="${ctx}/css/style.css" />
+<style>
+tr :last-child {
+	text-align: left;
+}
+
+input[type=submit], input[type=reset] {
+	text-align: center;
+}
+
+#btns {
+	text-align: center;
+}
+</style>
 </head>
 <body>
 	<header>

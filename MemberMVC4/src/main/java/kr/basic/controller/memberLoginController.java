@@ -13,26 +13,22 @@ public class memberLoginController implements Controller {
 	public String requestHandler(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String id = request.getParameter("id");
+		String pw = request.getParameter("pw");
+		System.out.printf("id : %s, pw : %s\n", id, pw);
 		if (request.getParameter("id") == null) {
 			return "memberLogin";
 		}
-		response.setContentType("text/html; charset=UTF-8");
-		String pw = request.getParameter("pw");
 		String dbPw = MemberDAO.getInstance().checkMemberId(id);
-		String ctx = request.getContextPath();
-//		PrintWriter writer = response.getWriter();
+		response.setContentType("text/html; charset=UTF-8");
 		if (dbPw == null || dbPw.equals(pw) == false) {
 			System.out.println("실패");
-//			writer.println("<script>alert('로그인 실패');</script>");
-//			writer.close();
-			return "redirect:" + ctx + "/memberLogin.do";
+			response.getWriter().print("notValid");
 		} else {
 			HttpSession session = request.getSession();
 			System.out.println("성공");
 			session.setAttribute("log", MemberDAO.getInstance().getMemberNo(id));
-//			writer.println("<script>alert('" + id + "님이 로그인하셨습니다');</script>");
-//			writer.close();
-			return "redirect:" + ctx + "/memberList.do";
+			response.getWriter().print("valid");
 		}
+		return null;
 	}
 }
