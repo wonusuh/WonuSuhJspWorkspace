@@ -6,10 +6,11 @@
 		<item value="NULL_RUNTIME"/>
 	</list>
 	<list key="J2EE_IMPORT_null">
+		<item value="C:\Users\82103\Downloads\수업\수업\MemberMVC5.war"/>
+		<item value="C:\Users\82103\Downloads\수업\수업\multiFileUpload.war"/>
 		<item value="C:\Users\82103\Downloads\memberMVC4\MemberMVC4.war"/>
 		<item value="C:\Users\82103\Downloads\ajaxCrud\ajax_crud.war"/>
 		<item value="C:\Users\82103\Downloads\memberMVC03\MemberMVC3.war"/>
 		<item value="C:\Users\82103\Desktop\MemberMVC2.war"/>
-		<item value="C:\Users\82103\Desktop\mvc2_Baisc2.war"/>
 	</list>
 </section>

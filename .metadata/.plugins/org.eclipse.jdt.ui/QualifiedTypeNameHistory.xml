@@ -23,7 +23,17 @@
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
-    <fullyQualifiedTypeName name="kr.basic.controller.Controller"/>
     <fullyQualifiedTypeName name="kr.basic.model.MemberDAO"/>
     <fullyQualifiedTypeName name="kr.basic.controller.ValidIdAjaxController"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="kr.basic.controller.Controller"/>
+    <fullyQualifiedTypeName name="kr.basic.controller.MemberUploadImgController"/>
+    <fullyQualifiedTypeName name="org.apache.tomcat.util.net.ApplicationBufferHandler"/>
+    <fullyQualifiedTypeName name="java.nio.file.Paths"/>
+    <fullyQualifiedTypeName name="java.nio.file.Path"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
+    <fullyQualifiedTypeName name="com.oreilly.servlet.MultipartRequest"/>
+    <fullyQualifiedTypeName name="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.MultipartConfig"/>
 </qualifiedTypeNameHistroy>
