@@ -1,6 +1,6 @@
 
-<%@page import="_04_rentcar.RentcarDao"%>
-<%@page import="_04_rentcar.RentcarVO"%>
+<%@page import="com.basic.rentcar.dao.RentcarDao"%>
+<%@page import="com.basic.rentcar.vo.RentcarVO"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -17,7 +17,7 @@
 	request.setCharacterEncoding("UTF-8"); // 한글 처리
 	%>
 
-	<jsp:useBean id="rbean" class="_04_rentcar.CarReserveVO">
+	<jsp:useBean id="rbean" class="com.basic.rentcar.vo.CarReserveVO">
 		<jsp:setProperty name="rbean" property="*" />
 	</jsp:useBean>
 

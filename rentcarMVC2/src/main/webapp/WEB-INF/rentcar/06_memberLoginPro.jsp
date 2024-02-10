@@ -1,4 +1,4 @@
-<%@page import="_04_rentcar.RentcarDao"%>
+<%@page import="com.basic.rentcar.dao.RentcarDao"%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>

@@ -1,4 +1,4 @@
-package _04_rentcar;
+package com.basic.rentcar.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,6 +6,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+
+import com.basic.rentcar.vo.CarReserveVO;
+import com.basic.rentcar.vo.CarViewVO;
+import com.basic.rentcar.vo.RentcarVO;
 
 
 public class RentcarDao {
