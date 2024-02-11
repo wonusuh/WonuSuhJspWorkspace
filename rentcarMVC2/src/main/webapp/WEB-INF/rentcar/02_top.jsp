@@ -9,36 +9,28 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%
-	// 세션을 이용한 로그인 처리
-	String id = (String) session.getAttribute("id");
-
-	// 로그인이 되어있지 않다면
-	if (id == null) {
-		id = "GUEST";
-	}
-	%>
 	<table>
 		<tr height="70">
 			<td colspan="4"><a href="${ctx}/01_carMain.jsp"
 				style="text-decoration: none"> <img alt="홈으로"
 					src="${ctx}/img/rent_logo.jpg" height="120">
 			</a></td>
-			<td align="center" width="200"><%=id%>님 <%
-			if (id.equals("GUEST")) {
-			%>
-				<button
-					onclick="location.href='01_carMain.jsp?center=05_memberLogin.jsp'">
-					로그인</button> <%
- } else {
- %>
-
-
-				<button onclick="location.href='07_memberLogout.jsp'">로그아웃
-				</button> <%
- }
- %></td>
+<%
+	
+%>
+			<c:if test="${log eq null}">
+				<td align="center" width="200">GUEST 님
+					<button
+						onclick="location.href='${ctx}/memberLogin.do'">로그인</button>
+				</td>
+			</c:if>
+			<c:if test="${log ne null}">
+				<td align="center" width="200">${vo.id}님
+					<button onclick="location.href='07_memberLogout.jsp'">로그아웃</button>
+				</td>
+			</c:if>
 		</tr>
+
 		<tr height="50">
 			<td align="center" width="200" bgcolor="pink"><font
 				color="white" size="5"><a

@@ -38,7 +38,10 @@
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
-    <fullyQualifiedTypeName name="com.basic.rentcar.frontcontroller.HandlerMapping"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="com.basic.rentcar.frontcontroller.Controller"/>
+    <fullyQualifiedTypeName name="com.basic.rentcar.controller.member.MemberLoginController"/>
+    <fullyQualifiedTypeName name="com.basic.rentcar.frontcontroller.HandlerMapping"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="com.basic.rentcar.frontcontroller.ViewResolver"/>
 </qualifiedTypeNameHistroy>
