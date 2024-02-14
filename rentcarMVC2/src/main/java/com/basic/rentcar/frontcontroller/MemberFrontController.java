@@ -28,8 +28,13 @@ public class MemberFrontController extends HttpServlet {
 		controller = mapping.getController(command);
 		nextPage = controller.requestHandler(request, response);
 		if (nextPage != null) {
+			if (nextPage == "main") {
+				response.sendRedirect(nextPage + ".jsp");
+				return;
+			}
 			if (nextPage.indexOf("redirect:") != -1) {
 				response.sendRedirect(nextPage.split(":")[1]);
+				return;
 			} else {
 				RequestDispatcher rd = request.getRequestDispatcher(ViewResolver.makeView(nextPage));
 				rd.forward(request, response);
