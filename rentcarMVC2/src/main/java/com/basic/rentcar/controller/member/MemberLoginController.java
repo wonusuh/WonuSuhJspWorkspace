@@ -7,9 +7,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import com.basic.rentcar.dao.MemberDAO;
 import com.basic.rentcar.frontcontroller.Controller;
-import com.basic.rentcar.vo.MemberVO;
+import com.basic.rentcar.model.dao.MemberDAO;
+import com.basic.rentcar.model.vo.MemberVO;
 
 public class MemberLoginController implements Controller {
 	@Override
@@ -24,10 +24,12 @@ public class MemberLoginController implements Controller {
 		if (vo != null) {
 			System.out.println("[ 로그인에 성공했습니다. ]");
 			HttpSession session = req.getSession();
+			System.out.println(vo);
 			session.setAttribute("user", vo);
+			return "main";
 		} else {
 			System.out.println("[ 로그인에 실패했습니다. ]");
+			return "05_memberLogin";
 		}
-		return "main";
 	}
 }

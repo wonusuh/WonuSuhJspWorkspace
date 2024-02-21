@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+header {
+	display: flex;
+	width: 75%;
+}
+
+header .logo {
+	width: 100%;
+	overflow: hidden;
+	flex: 8;
+	height: 200px;
+}
+
+header .logo:hover {
+	transition: 1s ease-out;
+	background-color: gray;
+}
+
+header .logo:not(:hover) {
+	transition: 1s ease-out;
+}
+
+header div {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.log {
+	width: 100%;
+	flex: 2;
+}
+
+.logo img {
+	width: 500px;
+}
+
+.top-menu {
+	display: flex;
+	width: 75%;
+	margin-bottom: 25px;
+}
+
+.top-menu>div {
+	width: 100%;
+	height: 50px;
+	font-size: 25px;
+	background-color: navy;
+	margin: 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+.top-menu div {
+	color: white;
+}
+
+.top-menu div:hover {
+	opacity: 50%;
+}
+
+.top-menu div:not(:hover) {
+	transition: 1s ease-out;
+}
