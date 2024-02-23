@@ -27,11 +27,10 @@ public class FrontController extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 
 		String code = request.getParameter("code");
-		System.out.println("code : " + code);
 		apiHelper.setAccessToken(getKakaoAccessToken(code));
-		apiHelper.setAdminKey("00667e1d30729f559dde0c94f22f10dd");
-		apiHelper.talkProfile();
-		apiHelper.unlink();
+//		apiHelper.talkProfile();
+		apiHelper.logout();
+//		apiHelper.unlink();
 	}
 
 	public String getKakaoAccessToken(String code) {

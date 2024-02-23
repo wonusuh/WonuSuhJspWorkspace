@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.naming.ldap.Control"/>
-    <fullyQualifiedTypeName name="com.basic.rentcar.controller.rentcar.CarAllListController"/>
-    <fullyQualifiedTypeName name="com.basic.rentcar.controller.rentcar.CarReserveInfoController"/>
-    <fullyQualifiedTypeName name="com.basic.rentcar.controller.rentcar.CarOptionSelectController"/>
-    <fullyQualifiedTypeName name="com.basic.rentcar.controller.rentcar.CarReserveResult"/>
-    <fullyQualifiedTypeName name="com.basic.rentcar.vo.CarReserveVO"/>
     <fullyQualifiedTypeName name="com.basic.rentcar.dao.CarReserveDAO"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
@@ -32,7 +26,6 @@
     <fullyQualifiedTypeName name="com.basic.rentcar.vo.MemberVO"/>
     <fullyQualifiedTypeName name="model.MemberDAO"/>
     <fullyQualifiedTypeName name="javax.annotation.processing.SupportedSourceVersion"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="model.vo.MemberVO"/>
     <fullyQualifiedTypeName name="com.basic.rentcar.controller.member.MemberQuitController"/>
     <fullyQualifiedTypeName name="model.dao.MemberDAO"/>
@@ -45,10 +38,7 @@
     <fullyQualifiedTypeName name="kr.basic.model.MemberVO"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
-    <fullyQualifiedTypeName name="org.apache.ibatis.io.Resources"/>
-    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactoryBuilder"/>
-    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="com.basic.rentcar.model.vo.MemberVO"/>
@@ -60,4 +50,14 @@
     <fullyQualifiedTypeName name="java.net.URL"/>
     <fullyQualifiedTypeName name="com.google.gson.JsonParser"/>
     <fullyQualifiedTypeName name="com.google.gson.JsonObject"/>
+    <fullyQualifiedTypeName name="movie.vo.UserVO"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.io.Resources"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+    <fullyQualifiedTypeName name="movie.dao.UserDAO"/>
+    <fullyQualifiedTypeName name="movie.controller.UserLoginController"/>
+    <fullyQualifiedTypeName name="movie.controller.Controller"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="movie.controller.UserLogoutController"/>
 </qualifiedTypeNameHistroy>

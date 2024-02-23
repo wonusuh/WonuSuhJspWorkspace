@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@include file="./header.jsp"%>
 <p id="token-result">temp data</p>
+<button onclick="location.href='./userLogin.jsp'">로그인화면으로가기</button>
 <script>
 			displayCode()
 			function displayCode() {
